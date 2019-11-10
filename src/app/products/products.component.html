@@ -1,0 +1,32 @@
+<h3>
+  Select your products!
+</h3>
+
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+      <th>Name</th>
+      <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td><input type="checkbox"></td>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button>Add to Cart</button>
+</div>
+
+<div>
+  Select your membership:
+
+  <select name="Membership" id="_membershipSelect">
+    <option *ngFor="let membership of memberships" value="membership">membership.name</option>
+  </select>
+</div>
